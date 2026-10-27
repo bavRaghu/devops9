@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: registration-form-deployment
+  name: docker-repository-deployment
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: registration-form
+      app: docker-repository
   template:
     metadata:
       labels:
-        app: registration-form
+        app: docker-repository
     spec:
       containers:
-        - name: registration-form
-          image: sumayyasadaf/registration-form:latest
+        - name: docker-repository
+          image: bavyaraghu/docker-repository:latest
           ports:
             - containerPort: 5000

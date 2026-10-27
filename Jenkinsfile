@@ -3,9 +3,9 @@ pipeline {
 
     environment {
         // Replace with your Docker Hub username/repository.
-        IMAGE_NAME = "sumayyasadaf/registration-form"
+        IMAGE_NAME = "bavyaraghu/docker-repository"
         IMAGE_TAG = "latest"
-        DOCKER_CREDENTIALS_ID = "dockerhub-credentials"
+        DOCKER_CREDENTIALS_ID = "bavyaraghu"
     }
 
     stages {
